@@ -1,0 +1,28 @@
+.contenedor{
+    width: 99%;
+    border: solid 6px;
+    border-radius: 12px;
+    background-color: rgb(200, 136, 212);
+    
+}
+
+.titulo-modificado{
+    text-align: center;
+    background-color: indigo;
+    border-radius: 20px;
+    width: 30%;
+    margin: auto;
+    border: solid 3px;
+
+}
+
+.cambio-del-fondo{
+    background-color: rgb(155, 208, 233);
+    font-size: 26px;
+    
+}
+
+.cambio-de-longitudes{
+    width: 400px;
+    height: 50%;
+}

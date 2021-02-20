@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<body>
+    <!--Vamos a crear en un formulario el cual tendrá 2 campos los cuales los usaremos para 
+    modificar las propiedades de un elemento HTML DIV, 
+    las propiedades serán el color de fondo,
+    el tamaño de fuentes y cambiarle la propiedad Height(altura)y Width(ancho)-->
+
+    <div class="contenedor">
+        <br>
+
+        <div class="titulo-modificado">
+            <h2>Tarea Formulario y el DOM</h2>
+
+            <button id="btn-cambiar-color">Cambiar Color</button>
+            <button id="btn-cambiar-longitudes">Cambiar longitudes</button>
+            <br>
+
+        </div>
+
+        <br>
+    </div>
+
+    <div id="body">
+        <h1>Formulario de vacunacion contra el Covid-19</h1>
+
+        <p>
+        <form id="formulario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="Nombre" id="nombre"><br>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="Apellido" id="apellido"><br>
+            <h2>¿Has sido contagiado por el Covid-19?</h2>
+
+            <input type="radio" name="opcion" value="si" id="opcion1">
+            <label for="opcion1">Si</label><br>
+
+            <input type="radio" name="opcion" value="no" id="opcion2">
+            <label for="opcion2">No</label><br>
+
+            <input type="submit" value="enviar">
+        </form>
+        <h2>¿Que es el Covid-19?</h2>
+        El COVID‑19 es la enfermedad infecciosa causada por el coronavirus que se ha descubierto más
+        recientemente.<br>
+        Tanto este nuevo virus como la enfermedad que provoca eran desconocidos antes de que estallara el brote
+        en Wuhan <br>
+        (China) en diciembre de 2019. Actualmente el COVID‑19 es una pandemia que afecta a muchos países de todo
+        el mundo.
+        </p>
+
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
