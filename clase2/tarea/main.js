@@ -1,30 +1,40 @@
 //Obtengo referencia con su identificador unico gracias a el id (en este caso)
-const tagBody = document.getElementById("body");
-const btnCambiarColor = document.getElementById("btn-cambiar-color");
-const btnCambiarLongitudes = document.getElementById("btn-cambiar-longitudes");
+const Body = document.getElementById("body")
+const Formulario = document.getElementById("formulario")
+const Console = document.getElementById("console")
 
+//Creamos las acciones para trabajar con los botones que modifican las propiedades de el formulario
+const accion = function(event){
+    event.preventDefault();
 
-const accion = function (event) {
-    tagBody.classList.add("cambio-del-fondo")
+    let tamanio = event.target.Letra.value;
+    let altura = event.target.Altura.value;
+    let Ancho = event.target.Ancho.value;
+    let colorFondo = event.target.Color.value;
 
+    
+    Body.style.fontSize = tamanio + "px";
+    Body.style.height = altura + "px";
+    Body.style. width = Ancho + "px";
+    Body.style.backgroundColor = colorFondo;
 }
 
-const accion2 = function (evet) {
-    tagBody.classList.add("cambio-de-longitudes")
-}
 
-btnCambiarColor.addEventListener("click", accion);
-btnCambiarLongitudes.addEventListener("click", accion2)
+//Agregamos accion al evento
+Formulario.addEventListener("submit",accion);
 
-const tagformulario = document.getElementById("formulario");
-
-const accion3 = function (event) {
+//Creamos la accion para trabajar con el formulario 
+const accion2 = function (event) {
 
     event.preventDefault()
 
+    //Obtenemos propiedades del evento
     console.log(event.target.Nombre.value)
     console.log(event.target.Apellido.value)
-    console.log(event.target.opcion.value)
+    console.log(event.target.opcion.value);
 }
+//Agregamos accion al evento
+Console.addEventListener("submit", accion2);
 
-tagformulario.addEventListener("submit", accion3)
+
+

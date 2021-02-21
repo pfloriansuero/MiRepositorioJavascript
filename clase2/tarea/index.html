@@ -16,28 +16,44 @@
     las propiedades serán el color de fondo,
     el tamaño de fuentes y cambiarle la propiedad Height(altura)y Width(ancho)-->
 
-    <div class="contenedor">
-        <br>
-
-        <div class="titulo-modificado">
-            <h2>Tarea Formulario y el DOM</h2>
-
-            <button id="btn-cambiar-color">Cambiar Color</button>
-            <button id="btn-cambiar-longitudes">Cambiar longitudes</button>
+    <form id="formulario">
+        <div class="contenedor">
             <br>
 
+            <h1>Tarea Formulario y el DOM</h1>
+            <div class="titulo-modificado">
+                <h2>Modificacion de la pagina</h2>
+                <label>Letras:</label>
+                <input class="btn" type="number" name="Letra" min="16" placeholder="16" max="32">
+
+                <label>Altura:</label>
+                <input class="btn" type="number" name="Altura" min="500" placeholder="500 " max="10000">
+                <br> <br>
+                <label>Ancho:</label>
+                <input class="btn" type="number" name="Ancho" min="500" placeholder="500 " max="1000">
+                <label>Color:</label>
+                <input class="btn" type="color" name="Color" value="#ffffff">
+
+            </div>
+
+            <br>
+
+            <div class="titulo-modificado">
+                <br>
+                <button id="btn-emplear-cambio">Emplear Cambios</button><br>
+                <br>
+            </div>
+
+            <br>
         </div>
-
-        <br>
-    </div>
-
+    </form>
     <div id="body">
         <h1>Formulario de vacunacion contra el Covid-19</h1>
 
         <p>
-        <form id="formulario">
-            <label for="nombre">Nombre:</label>
-            <input type="text" name="Nombre" id="nombre"><br>
+        <form id="console">
+            <label for="nombre">Nombre :</label>
+            <input type="text" name="Nombre" id="nombre"><br><br>
 
             <label for="apellido">Apellido:</label>
             <input type="text" name="Apellido" id="apellido"><br>
@@ -51,6 +67,7 @@
 
             <input type="submit" value="enviar">
         </form>
+        <hr>
         <h2>¿Que es el Covid-19?</h2>
         El COVID‑19 es la enfermedad infecciosa causada por el coronavirus que se ha descubierto más
         recientemente.<br>
