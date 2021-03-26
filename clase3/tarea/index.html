@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container pt-3 pt-sm-3">
+        <form id="mi-formulario" class="row">
+            <div>
+                <h2 class="text-center mt-3 mb-3">
+                    Lista de tareas
+                </h2>
+            </div>
+
+            <div class="col-xs-12 col-md-4 my-3  my-sm-3">
+                <input type="text" class="form-control" placeholder="Titulo" name="titulo" id="titulo">
+            </div>
+
+            <div class="col-xs-12 col-md-4 mb-3 my-sm-3">
+                <input type="text" class="form-control" placeholder="Descripcion" name="descripcion" id="descripcion">
+            </div>
+
+            
+          
+            <div class="d-grid gap-2 col-xs-12 col-md-2 my-3 my-sm-3 ">
+
+                <button class="btn btn-primary" type="submit">Agregar</button>
+                
+              </div>
+
+        </form>
+       
+        <div class="col-xs-12 col-md-10 my-3 my-sm-3 ">
+            <ul id="listado" class="list-group">
+                <!-- <li class="list-group-item">Tarea 1</li>
+                <li class="list-group-item">Tarea 2</li>
+                <li class="list-group-item">Tarea 3</li> -->
+            </ul>
+        </div>
+
+        
+     </div>
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+   <script src="main.js"></script>
+</body>
+</html>
